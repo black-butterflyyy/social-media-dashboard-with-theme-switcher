@@ -19,6 +19,7 @@ body {
 h2 {
   font-size: 3.3rem;
   font-weight: 700;
+  margin: 6rem 0 2rem 0;
 }
 
 h3 {
@@ -165,19 +166,6 @@ input:checked + .slider::before {
   padding-bottom: 3rem;
 }
 
-.updated-numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.updated-numbers span {
-  font-size: 1.5rem;
-  padding-left: 0.5rem;
-  color: hsl(163, 72%, 41%);
-  font-weight: bold;
-}
-
 .facebook-card {
   margin-top: 22rem;
   border-top-color: hsl(208, 92%, 53%);
@@ -200,7 +188,7 @@ input:checked + .slider::before {
 }
 
 .overview-cards {
-  margin: 6rem 0;
+  margin: 0 0 6rem 0;
 }
 
 .overview-card {
@@ -288,4 +276,53 @@ body.dark-theme {
 
 .dark-theme .overview-card strong {
   color: #fff;
+}
+
+/*styles for desktop */
+@media screen and (min-width: 875px) and (max-width: 1440px) {
+  .container {
+    display: block;
+  }
+
+  .social-media-cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23rem;
+  }
+
+  .social-media-card {
+    width: 20%;
+    margin-right: 3rem;
+    margin-top: 0;
+    padding: 3rem;
+  }
+  .theme-switch h3 {
+    margin-right: 2rem;
+  }
+  .social-media-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+  }
+
+  .social-media-header p {
+    border: none;
+  }
+
+  .overview-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+  }
+
+  .overview-card {
+    width: 20%;
+    margin-right: 3rem;
+    padding: 1rem 2rem;
+  }
 }
