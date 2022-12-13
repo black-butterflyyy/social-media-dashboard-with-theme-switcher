@@ -258,6 +258,10 @@ body.dark-theme {
   color: hsl(228, 34%, 66%);
 }
 
+.dark-theme h2 {
+  color: #fff;
+}
+
 .dark-theme .social-media-header {
   background-color: hsl(232, 19%, 15%);
 }
