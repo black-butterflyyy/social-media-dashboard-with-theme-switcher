@@ -1,5 +1,6 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+/* Light theme styles*/
 * {
   box-sizing: border-box;
 }
@@ -12,6 +13,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: hsl(228, 12%, 44%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 h2 {
@@ -69,7 +71,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8rem 0rem 2rem;
+  padding: 2rem 0;
 }
 
 .switch {
@@ -108,7 +110,7 @@ h3 {
 }
 
 input:checked + .slider {
-  background: #b892ff;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 input:checked + .slider::before {
@@ -231,6 +233,7 @@ input:checked + .slider::before {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .increase span,
@@ -243,4 +246,46 @@ input:checked + .slider::before {
 }
 .decrease {
   color: hsl(356, 69%, 56%);
+}
+
+/* Dark theme styles*/
+body.dark-theme {
+  background-color: hsl(230, 17%, 14%);
+  color: hsl(228, 34%, 66%);
+}
+
+.dark-theme .social-media-header {
+  background-color: hsl(232, 19%, 15%);
+}
+.dark-theme .social-media-header h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-theme .social-media-header p {
+  border-bottom-color: hsl(228, 12%, 44%);
+}
+
+.dark-theme .slider::before {
+  background-color: hsl(232, 19%, 15%);
+}
+
+.dark-theme .social-media-card,
+.dark-theme .overview-card {
+  background: hsl(228, 28%, 20%);
+}
+
+.dark-theme .instagram-card {
+  border-top: double 5px transparent;
+  background-image: linear-gradient(hsl(228, 28%, 20%), hsl(228, 28%, 20%)),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.dark-theme .followers strong {
+  color: #fff;
+}
+
+.dark-theme .overview-card strong {
+  color: #fff;
 }
