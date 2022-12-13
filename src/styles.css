@@ -135,6 +135,11 @@ input:checked + .slider::before {
   z-index: 999;
 }
 
+.social-media-card:hover {
+  cursor: pointer;
+  background-color: hsl(227, 47%, 92%);
+}
+
 .username {
   display: flex;
   justify-content: center;
@@ -183,6 +188,12 @@ input:checked + .slider::before {
   background-clip: padding-box, border-box;
 }
 
+.instagram-card:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(227, 47%, 92%), hsl(227, 47%, 92%)),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
 .youtube-card {
   border-color: hsl(348, 97%, 39%);
 }
@@ -197,6 +208,11 @@ input:checked + .slider::before {
   background-color: hsl(227, 47%, 96%);
   border-radius: 10px;
   margin-top: 2rem;
+}
+
+.overview-card:hover {
+  background-color: hsl(227, 47%, 92%);
+  cursor: pointer;
 }
 
 .overview-card-header,
@@ -261,10 +277,22 @@ body.dark-theme {
 .dark-theme .overview-card {
   background: hsl(228, 28%, 20%);
 }
+.dark-theme .social-media-card:hover,
+.dark-theme .overview-card:hover {
+  background: hsl(228, 28%, 25%);
+}
 
 .dark-theme .instagram-card {
   border-top: double 5px transparent;
   background-image: linear-gradient(hsl(228, 28%, 20%), hsl(228, 28%, 20%)),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.dark-theme .instagram-card:hover {
+  border-top: double 5px transparent;
+  background-image: linear-gradient(hsl(228, 28%, 25%), hsl(228, 28%, 25%)),
     linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   background-origin: border-box;
   background-clip: padding-box, border-box;
