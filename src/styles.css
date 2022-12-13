@@ -280,6 +280,10 @@ body.dark-theme {
 
 /*styles for desktop */
 @media screen and (min-width: 875px) and (max-width: 1440px) {
+  h2 {
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
   .container {
     display: block;
   }
@@ -288,7 +292,7 @@ body.dark-theme {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 23rem;
+    margin-top: 18rem;
   }
 
   .social-media-card {
@@ -297,14 +301,16 @@ body.dark-theme {
     margin-top: 0;
     padding: 3rem;
   }
+
   .theme-switch h3 {
     margin-right: 2rem;
   }
+
   .social-media-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 8rem;
+    align-items: baseline;
+    padding: 2rem 8rem;
   }
 
   .social-media-header p {
