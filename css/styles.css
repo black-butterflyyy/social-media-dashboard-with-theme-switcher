@@ -1,5 +1,9 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   /* 10px */
   font-size: 62.5%;
@@ -19,7 +23,7 @@ body {
 
 .social-media-header {
   background-color: hsl(225, 100%, 98%);
-  height: 40vh;
+  height: 50vh;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   position: absolute;
@@ -28,7 +32,6 @@ body {
   padding: 2rem 3rem;
   padding-bottom: 5rem;
   width: 100%;
-  z-index: -1;
 }
 
 .social-media-header h1 {
@@ -117,6 +120,7 @@ input:checked + .slider::before {
   margin-top: 3rem;
   border-radius: 10px;
   border-top: 5px solid transparent;
+  z-index: 999;
 }
 
 .username {
