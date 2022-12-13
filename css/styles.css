@@ -11,6 +11,17 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
+  color: hsl(228, 12%, 44%);
+}
+
+h2 {
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .container {
@@ -42,7 +53,6 @@ body {
 
 .social-media-header p {
   font-size: 2rem;
-  color: hsl(228, 12%, 44%);
   font-weight: 700;
   line-height: 0;
   padding-bottom: 5rem;
@@ -52,7 +62,6 @@ body {
 .social-media-header h3 {
   margin: 0;
   font-size: 1.953rem;
-  color: hsl(228, 12%, 44%);
   font-weight: 700;
 }
 
@@ -114,7 +123,7 @@ input:checked + .slider::before {
 }
 
 .social-media-card {
-  width: 75%;
+  width: 100%;
   padding: 5rem;
   background-color: hsl(227, 47%, 96%);
   margin-top: 3rem;
@@ -128,7 +137,6 @@ input:checked + .slider::before {
   justify-content: center;
   align-self: center;
   font-size: 1.5rem;
-  color: hsl(228, 12%, 44%);
   font-weight: bold;
 }
 
@@ -150,7 +158,6 @@ input:checked + .slider::before {
 }
 
 .followers span {
-  color: hsl(228, 12%, 44%);
   letter-spacing: 3px;
   font-size: 1.3rem;
   padding-bottom: 3rem;
@@ -188,4 +195,52 @@ input:checked + .slider::before {
 
 .youtube-card {
   border-color: hsl(348, 97%, 39%);
+}
+
+.overview-cards {
+  margin: 6rem 0;
+}
+
+.overview-card {
+  width: 100%;
+  padding: 2rem 5rem;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.overview-card-header,
+.overview-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview-card-content {
+  margin: 1rem 0;
+}
+
+.overview-card strong {
+  font-size: 4rem;
+  color: hsl(230, 17%, 14%);
+}
+
+.increase,
+.decrease {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.increase span,
+.decrease span {
+  margin-left: 0.5rem;
+}
+
+.increase {
+  color: hsl(163, 72%, 41%);
+}
+.decrease {
+  color: hsl(356, 69%, 56%);
 }
