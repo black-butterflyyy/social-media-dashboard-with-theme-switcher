@@ -40,8 +40,8 @@ body {
   font-weight: 700;
 }
 
-.social-media-header h2 {
-  font-size: 2.441rem;
+.social-media-header p {
+  font-size: 2rem;
   color: hsl(228, 12%, 44%);
   font-weight: 700;
   line-height: 0;
